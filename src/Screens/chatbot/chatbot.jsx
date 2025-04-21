@@ -319,8 +319,8 @@ const AiAssistant = () => {
           <button
             style={{
               'cursor': 'pointer',
-              'width': '10%',
-              'padding': '10px',
+              // 'width': '10%',
+              // 'padding': '10px',
             }}
             onClick={speakLastBotMessage}
             disabled={history.length === 0}
@@ -332,8 +332,8 @@ const AiAssistant = () => {
           {/* Other buttons (e.g., Send, TTS, etc.) can be here */}
           <button onClick={toggleVoiceToText} className="voice-to-text-btn" style={{
             'cursor': 'pointer',
-            'width': '10%',
-            'padding': '10px',
+            'width': '20%',
+            'padding': '20px',
           }}>
             <FaMicrophone size={18} />
           </button>

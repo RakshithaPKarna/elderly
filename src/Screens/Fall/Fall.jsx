@@ -14,7 +14,7 @@ const Fall = () => {
   // CSS styles for the iframe
   const iframeStyle = {
     width: '100%',
-    maxWidth: '100%',
+    maxWidth: '80%',
     height: '100%', // Adjust the height as needed
     maxHeight: '680px', // Set a maximum height if desired
     border: 'none', // Remove iframe border

@@ -1,252 +1,217 @@
-.Homecareservices{
+
+.Homecareservices {
   text-align: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 400px;
-  padding-left: 40px;
+  width: 100%;
+  height: 100vh; /* Ensures full screen without overflow */
+  padding: 20px;
+  overflow: hidden;
+  background: url('../../assets/purple.jpg') no-repeat center center/cover;
 }
 
-.features {
-    display: flex;
-  
-    justify-content: center;
-    
-  }
-  
-.feature{
-    width: 10%;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-
-    background-color: #fff;
-    text-align: center;
-   
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: rgb(10, 1, 1);            
-    box-shadow: 0 0 20px #110101;
-    border-radius: 10px;
-    
-}
-
-.active {
-    background-color: #a1cefd;
-    color: #fff;
-    border-color: #007bff;
-
-  }
-
-.service-form{
-
-  display: flex;
-  flex-direction: column;
-  
+/* Swiper Carousel */
+.service-carousel {
   width: 90%;
-    margin: 50px;
-    padding: 10px;
-   
-    
-
-
+  max-width: 1400px; /* Ensures it fits within screen width */
+  margin: auto;
+  padding: 20px 0;
 }
 
-.btn{
-  width: 10%;
-   
-    padding: 10px;
-    align-self: center;
-    border: 1px solid #030000;
-    border-radius: 5px;
+/* Swiper Wrapper */
+.swiper-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:30vh;
+  margin-left:0;
 }
 
+/* Swiper Slide */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-form{
+/* Feature Cards */
+.feature-card {
   width: 100%;
-  display: flex;
-  
+  max-width: 280px; /* Prevents excessive stretching */
+  height: 300px;
   padding: 10px;
-
-    
+  margin: 5px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  background: url('../../assets/shopping.jpeg') 
+              no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.form-group{
-   width: 100%;
+.feature-card h3 {
+  margin-bottom: 10px;
+  color: white;
+  font-size: 1rem;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+/* WhatsApp Button */
+.whatsapp-button {
+  margin-top: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
   display: flex;
-  
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: darkgreen;
+}
+
+.whatsapp-button svg {
+  margin-right: 5px;
+}
+
+/* Active Selection */
+.active {
+  background-color: #100018;
+  color: #fff;
+  border-color: #19022c;
+}
+
+/* Service Form */
+.service-form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
   padding: 10px;
 }
-.n{
+
+/* Form */
+form {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding-right: 10px; 
-   
-
-}
-input{
-
-  display: flex;
-  
-  width: 50%;
-  
-  border: 2px solid #030000;
-  border-radius: 2px;
- 
+  padding: 10px;
 }
 
-textarea{
-  display: flex;
-  
+/* Form Groups */
+.form-group {
   width: 100%;
-  height: 100%;
-  
-  border: 1px solid #030000;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+/* Input Fields */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #030000;
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
 
+textarea {
+  height: 150px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-.error{
+/* Error Messages */
+.error {
   text-align: start;
   font-size: 10px;
-}
-@media screen and (max-width: 768px) {
-
-  .Homecareservices{
-    height: 100%;
-    text-align: center;
-    align-items: center;
-
-    padding: 10px;
+  color: red;
 }
 
-h1{
-  font-size: 20px;
-}
-    .features {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        padding: 1px;
-      }
-      
-    .feature{
-      
-        margin: 10px;
-        margin-bottom: 10px;
-       height: auto;
-       width: auto;
-        padding: 5px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease;
-    
-      
-        text-align: center;
-       
-        transition: 0.5s;
-        background-size: 200% auto;
-        color: rgb(10, 1, 1);            
-        box-shadow: 0 0 20px #110101;
-        border-radius: 10px;
-        
-    }
-
-
-
-    
-.service-form{
-
-  display: flex;
-  flex-direction: column;
-
-  width: 70%;
-    
-    border: 1px solid #030000;
-    border-radius: 5px;
-    
-
-
-}
-
-.service-form>h2{
-  text-align: center;
-  font-size: smaller;
-}
-
-.error{
-  font-size: 10px;
-  text-align: center;
-}
-
-
-
-form{
-  width: 100%;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  align-items: center;
-    justify-content: center;
- 
-
-    
-}
-
-.form-group{
-   width: 90%;
-  display: flex;
-  margin: 0px,0px,0px,0px;
-  padding: 2px;
-  text-align: center;
-  align-items: center;
-    justify-content: center;
-}
-.n{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding-right: 0px; 
-  text-align: center;
-
-  
-
-}
-input{
-
-  display: flex;
-  text-align: center;
-  width: 100%;
- 
-  border: 2px solid #030000;
-  border-radius: 6px;
- 
-}
-
-textarea{
-  display: flex;
-  text-align: center;
-  width: 100%;
-  height: 200px;
-  
+/* Submit Button */
+.btn {
+  width: 50%;
+  padding: 10px;
+  align-self: center;
   border: 1px solid #030000;
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-.btn{
-  width: 50%;
-   
-    padding: 10px;
-    align-self: center;
-    border: 1px solid #030000;
-    border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* 📱 Responsive Design */
+@media screen and (max-width: 1024px) {
+  .service-carousel {
+    width: 95%;
+  }
+
+  .feature-card {
+    max-width: 250px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Homecareservices {
+    height: auto;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .service-carousel {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .feature-card {
+    width: 90%;
+    max-width: 220px;
+    height: 60vh;
+    /* padding: 10px; */
+    font-size: 1rem;
+    border-radius: 20px; /* Makes the corners rounded */
+    overflow: hidden;
+  }
+
+  .service-form {
+    width: 90%;
+    margin: 30px auto;
+  }
+
+  .form-group {
+    width: 100%;
+    padding: 5px;
+  }
+
+  input, textarea {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .btn {
+    width: 70%;
+  }
 }

@@ -20,7 +20,7 @@ const LandingPage = () => {
     
       <h1>Welcome to OldCare Connect</h1>
     
-      <p>Your Elderly Assistance Platform</p>
+      <h1>Your Elderly Assistance Platform</h1>
 
       <div className="featuresl">
         <div className="featurel">
@@ -61,11 +61,12 @@ const LandingPage = () => {
         </div>
 
         <div className="featurel">
-          <FaBirthdayCake className="feature-icon" />
-          <br></br>
-          Organizing Parties
-          <p>Celebrate with events and parties for the elderly.</p>
-        </div>
+  <FaBirthdayCake className="feature-icon" />
+  <br />
+  Meaningful Celebrations
+  <p>Creating warm and memorable gatherings for seniors.</p>
+</div>
+
 
         <div className="featurel">
           <FaExclamationTriangle className="feature-icon" />
@@ -87,8 +88,8 @@ const LandingPage = () => {
         <div className="contact-details">
           <h3>Contact Us</h3>
           <p>Email: tarp</p>
-          <p>Phone: +91 1213232322121</p>
-          <p>Address: Vellore</p>
+          <p>Phone: +91 8296404949</p>
+          <p>Address: Bangalore</p>
         
         </div>
        
